@@ -14,11 +14,11 @@ class Shoe:
         if isinstance(size, int):
             self.size = size
         else:
-            raise ValueError("size must be an integer")
+             print("size must be an integer")
     
     shoe_size = property(get_shoe_size, set_size)
     
     def cobble(self):
         self.condition = "New"
         print("Your shoe is as good as new!")
-shoe = Shoe()
+
